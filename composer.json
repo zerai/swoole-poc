@@ -1,0 +1,18 @@
+{
+    "name": "zerai/swoole-poc",
+    "description": "swoole playground",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Zerai\\SwoolePoc\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "zero",
+            "email": "teclaizerai@gmail.com"
+        }
+    ],
+    "require": {}
+}
