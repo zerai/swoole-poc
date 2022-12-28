@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  php:
+    build:
+      context: ./docker/php-swoole
+      dockerfile: Dockerfile
+    ports:
+      - "80:8000"
+      - "81:8001"
+    volumes:
+      - "./:/app"
+    #command: "php /app/src-demo/Http/Simple/index.php"
+    command: "php /app/src-demo/Http/Simple/index-2-instance.php"

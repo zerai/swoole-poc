@@ -1,18 +1,24 @@
 {
     "name": "zerai/swoole-poc",
-    "description": "swoole playground",
+    "description": "Swoole playground",
     "type": "library",
     "license": "MIT",
-    "autoload": {
-        "psr-4": {
-            "Zerai\\SwoolePoc\\": "src/"
-        }
-    },
     "authors": [
         {
-            "name": "zero",
+            "name": "Zerai Teclai",
             "email": "teclaizerai@gmail.com"
         }
     ],
-    "require": {}
+    "require": {
+        "php": ">=8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Zerai\\Swoole\\": "src/",
+            "Demo\\": "src-demo/"
+        }
+    },
+    "require-dev": {
+        "swoole/ide-helper": "@dev"
+    }
 }
